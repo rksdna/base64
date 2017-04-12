@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
     base64::context context;
     base64::decode_more(context, part1.begin(), part1.end(), std::ostream_iterator<char>(std::cout));
     base64::decode_more(context, part2.begin(), part2.end(), std::ostream_iterator<char>(std::cout));
-
     std::cout << std::endl;
 
     return 0;
